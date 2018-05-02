@@ -1,9 +1,9 @@
-extern unsigned strlen(const char*);
-extern int printf(const char*,...);
+#include <func.h>
 
 int main()
 {
-	char *s1 = "abcd";
+	char *s1;
+	get_user_input(s1);
 	char len = strlen(s1);
 	char *s2 = s1 + len;
 	char *offset = s1 - 1;
@@ -16,4 +16,3 @@ int main()
 
 	return 0;
 }
-
