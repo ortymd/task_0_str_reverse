@@ -1,10 +1,12 @@
 #include <func.h>
+#include <stdio.h>
 
 extern const unsigned delim_start;
 extern const unsigned delim_end;
 
 int main()
 {
+	printf("input string(max 1024):\n");
 	char *s1;
 	get_user_input(s1);
 
@@ -22,6 +24,7 @@ int main()
 
 		start = delim+1;
 	}
+	printf("%s\n", s1);
 
 	return 0;
 }

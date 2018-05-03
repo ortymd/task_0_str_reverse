@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <func.h>
 
-unsigned input_sz = 1<<3;
-const unsigned delim_start = 33;	// ascii num
+unsigned input_sz = 1<<10;
+const unsigned delim_start = 32;	// ascii num
 const unsigned delim_end = 47;	// ascii num
 
 void get_user_input(char *user_input)
